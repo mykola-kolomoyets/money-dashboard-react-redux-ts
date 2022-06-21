@@ -1,0 +1,71 @@
+@import "./../../styles/variables.scss";
+@import "./../../styles/mixins.scss";
+
+.menu {
+    width: 250px;
+    height: 100%;
+    // background-color: $light-purple;
+    padding-top: 30px;
+
+    &__title {
+        position: relative;
+        color: #ffffff;
+        font-size: 36px;
+        text-align: center;
+        padding: 30px;
+
+        &::after {
+            z-index: 100;
+            content: "";
+            position: absolute;
+            width: calc(100% - 30px);
+            height: 1px;
+            background-color: white;
+            top: 100%;
+            left: 30px;
+        }
+    }
+
+    &__list {
+        @include flex(column, flex-start, flex-start, 0);
+        list-style-type: none;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    &__item {
+        width: 100%;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        padding: 10px 12px;
+
+        svg {
+            @include size(24px);
+            path {
+                fill: $middle-gray;
+            }
+        }
+
+        a {
+            @include flex(row, flex-start, center, 16px);
+            text-decoration: none;
+            color: $middle-gray;
+        }
+
+        &_active {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+
+            svg {
+                path {
+                    fill: #ffffff;
+                }
+            }
+
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+}
