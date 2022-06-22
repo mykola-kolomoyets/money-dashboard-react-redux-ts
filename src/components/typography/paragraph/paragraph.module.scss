@@ -1,0 +1,27 @@
+@import "./../../../styles/mixins.scss";
+
+.p {
+    @include raleway();
+
+    &__bold {
+        font-weight: 700;
+    }
+
+    &__view {
+        &_link {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: $dark-gray;
+            cursor: pointer;
+        }
+
+        &_button {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
+}

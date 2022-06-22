@@ -1,0 +1,10 @@
+@import "./../../styles/mixins.scss";
+@import "./../../styles/variables.scss";
+
+.avatar {
+    @include center();
+    @include size(34px);
+    @include border-rad-m();
+    background-color: #d9d9d9;
+    cursor: pointer;
+}

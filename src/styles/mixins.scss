@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 @mixin header() {
     font-family: "Raleway";
     font-size: 36px;
@@ -12,6 +14,7 @@
     font-weight: 400;
     letter-spacing: 0em;
     text-align: left;
+    color: $black;
 }
 
 @mixin flex($fd, $jc, $ai, $gap) {
@@ -25,4 +28,13 @@
 @mixin size($size) {
     width: $size;
     height: $size;
+}
+
+@mixin center() {
+    display: grid;
+    place-items: center;
+}
+
+@mixin border-rad-m() {
+    border-radius: 20px;
 }

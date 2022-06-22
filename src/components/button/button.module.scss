@@ -8,6 +8,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.1s ease;
+    min-height: 35px;
 
     &:hover {
         background-color: $light-purple;

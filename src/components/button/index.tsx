@@ -1,7 +1,8 @@
-import React, { DetailedHTMLProps, FC, HTMLAttributes } from "react";
+import React, { FC } from "react";
 import cn from "classnames";
 
 import styles from "./button.module.scss";
+import { Detailed } from "utils/types";
 
 export enum ButtonView {
   primary = "primary",
@@ -11,7 +12,7 @@ export enum ButtonView {
 type ButtonProps = {
   view: ButtonView;
   rightAddons?: any;
-} & DetailedHTMLProps<HTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
+} & Detailed<HTMLButtonElement>;
 
 const Button: FC<ButtonProps> = ({ view, rightAddons, children, ...props }) => {
   const classes = cn(styles.button, {
