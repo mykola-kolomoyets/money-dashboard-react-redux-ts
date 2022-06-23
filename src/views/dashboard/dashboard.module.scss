@@ -2,30 +2,82 @@
 @import "./../../styles/variables.scss";
 
 .dashboard {
+    position: relative;
     display: grid;
-    grid-template-areas: "left right";
     grid-template-columns: 1fr 315px;
-    gap: 50px;
+    // grid-auto-rows: minmax(min-content, max-content);
+    grid-template-rows: 37px minmax(min-content, max-content);
+    gap: 36px;
+    height: 100%;
+    grid-template-areas: "title menu"
+                            "badges last_purchases"
+                            "chart last_purchases";
 
-    &__left {
-        grid-area: left;
+    @media screen and (max-width: 1366px) {
+        grid-template-areas: "menu"
+        "title"
+        "badges"
+        "last_purchases"
+        "chart";
+        gap: 16px;
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows: 37px 75px minmax(min-content, max-content);
     }
 
-    &__right {
-        grid-area: right;
-    }
 
     &__row {
-        @include flex(row, space-between, center, 0);
+        @include flex(row, space-between, flex-start, 16px);
         min-height: 36px;
-        margin-bottom: 37px;
+
+        @media screen and (max-width: 1300px) {
+            margin-bottom: 16px;
+        }
     }
 
     &__title {
-        font-size: 36px;
-        strong {
-            font-weight: 700;
+        grid-area: title;
+
+        @media screen and (max-width: 1366px) {
+            h1 {
+                font-size: 28px;
+                flex-direction: column;
+                gap: 0;
+            }
         }
+       
+    }
+
+    &__chart {
+        @include center();
+        grid-area: chart;
+        background-color: $light-gray;
+        border-radius: 15px;
+        height: 100%;
+        flex: 1;
+    }
+
+    &__badges {
+        grid-area: badges;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    &__menu {
+        grid-area: menu;
+        align-items: center;
+
+        @media screen and (max-width: 1366px) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__last_purchases {
+        padding: 16px;
+        grid-area: last_purchases;
+        background-color: $light-gray;
+        border-radius: 15px;
     }
 
     &__inline {

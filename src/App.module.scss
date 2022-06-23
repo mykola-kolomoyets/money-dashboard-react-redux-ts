@@ -13,7 +13,7 @@ html {
 }
 
 .app {
-    @include flex(row, flex-start, stretch, 30px);
+    @include flex(row, flex-start, stretch, 0);
     width: 100vw;
     height: 100vh;
     background-color: $purple;

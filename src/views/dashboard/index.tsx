@@ -1,3 +1,5 @@
+import cn from "classnames";
+
 import Avatar from "components/avatar";
 import Typography from "components/typography";
 import { ParagraphView } from "components/typography/paragraph";
@@ -8,47 +10,65 @@ import { hoc } from "../../utils/hoc";
 import useDashboard from "./dashboard.hook";
 
 import styles from "./dashboard.module.scss";
+import Badge from "components/badge";
 
-const Dashboard = hoc(useDashboard, ({ userName }) => (
-  <section className={styles.dashboard}>
-    <section className={styles.dashboard__left}>
-      <div className={styles.dashboard__row}>
-        <Typography.Title Tag={TitleTag.h1}>
-          Welcome back,{" "}
-          <Typography.Paragraph view={ParagraphView.regular} bold>
-            {userName}
-          </Typography.Paragraph>
-        </Typography.Title>
+const Dashboard = hoc(useDashboard, ({ width, userName, badgesData }) => (
+	<section className={styles.dashboard}>
+		<div className={cn(styles.dashboard__row, styles.dashboard__title)}>
+			<Typography.Title Tag={TitleTag.h1}>
+				Welcome back,{" "}
+				<Typography.Paragraph view={ParagraphView.regular} bold>
+					{userName}
+				</Typography.Paragraph>
+			</Typography.Title>
 
-        <Button view={ButtonView.primary}>
-          <Typography.Paragraph view={ParagraphView.button}>
-            Add purchase
-          </Typography.Paragraph>
-        </Button>
-      </div>
+			{width! >= 1366 && (
+				<Button view={ButtonView.primary}>
+					<Typography.Paragraph view={ParagraphView.button}>
+						Add purchase
+					</Typography.Paragraph>
+				</Button>
+			)}
+		</div>
 
-      <div className={styles.dashboard__row}>Badges</div>
-    </section>
+		<div className={cn(styles.dashboard__row, styles.dashboard__badges)}>
+			{badgesData.map((data) => (
+				<Badge {...data} />
+			))}
+		</div>
 
-    <section className={styles.dashboard__right}>
-      <div className={styles.dashboard__row}>
-        <section className={styles.dashboard__inline}>
-          <Typography.Paragraph view={ParagraphView.link}>
-            Statistics
-          </Typography.Paragraph>
+		<div className={cn(styles.dashboard__row, styles.dashboard__menu)}>
+			<section className={styles.dashboard__inline}>
+				{width! < 1366 && (
+					<Button view={ButtonView.primary}>
+						<Typography.Paragraph view={ParagraphView.button}>
+							Add purchase
+						</Typography.Paragraph>
+					</Button>
+				)}
 
-          <Typography.Paragraph view={ParagraphView.link}>
-            Profile
-          </Typography.Paragraph>
-        </section>
+				<Typography.Paragraph view={ParagraphView.link}>
+					Statistics
+				</Typography.Paragraph>
 
-        <section>
-          <Avatar name="Mykola" />
-        </section>
-      </div>
-      <div className={styles.dashboard__row}>Last Purchases</div>
-    </section>
-  </section>
+				<Typography.Paragraph view={ParagraphView.link}>
+					Profile
+				</Typography.Paragraph>
+			</section>
+
+			<section>
+				<Avatar name="Mykola" />
+			</section>
+		</div>
+
+		<div
+			className={cn(styles.dashboard__row, styles.dashboard__last_purchases)}
+		>
+			Last Purchases
+		</div>
+
+		<section className={cn(styles.dashboard__chart)}>The chart</section>
+	</section>
 ));
 
 export default Dashboard;
