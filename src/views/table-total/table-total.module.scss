@@ -1,0 +1,8 @@
+@import './../../styles/mixins.scss';
+
+.table_total {
+  &_row {
+    @include flex(row, space-between, center, 16px);
+    margin-bottom: 30px;
+  }
+}
