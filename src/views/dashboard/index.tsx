@@ -22,7 +22,7 @@ const Dashboard = hoc(useDashboard, ({ width, userName, badgesData }) => (
 				</Typography.Paragraph>
 			</Typography.Title>
 
-			{width! >= 1366 && (
+			{width! > 1366 && (
 				<Button view={ButtonView.primary}>
 					<Typography.Paragraph view={ParagraphView.button}>
 						Add purchase
@@ -39,7 +39,7 @@ const Dashboard = hoc(useDashboard, ({ width, userName, badgesData }) => (
 
 		<div className={cn(styles.dashboard__row, styles.dashboard__menu)}>
 			<section className={styles.dashboard__inline}>
-				{width! < 1366 && (
+				{width! <= 1366 && (
 					<Button view={ButtonView.primary}>
 						<Typography.Paragraph view={ParagraphView.button}>
 							Add purchase
