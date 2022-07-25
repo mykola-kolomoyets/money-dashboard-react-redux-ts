@@ -1,9 +1,15 @@
 import React from 'react';
 
-import styles from './styles/app.module.scss';
+import Statistics from './components/layout/statistics';
+
+import './styles/app.scss';
 
 const App = () => {
-  return <div className={styles.app}>Hello</div>;
+  return (
+    <main>
+      <Statistics />
+    </main>
+  );
 };
 
 export default App;

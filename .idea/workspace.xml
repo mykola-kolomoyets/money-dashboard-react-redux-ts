@@ -2,23 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73c889f1-15a2-436a-b96b-73ff77b8357f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.prettierrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/api/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/api/expenses.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/utils/enums/common.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/utils/types/common.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/utils/types/services/auth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/utils/types/services/common.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/utils/types/services/expenses.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/icons/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/icons/week-expenses.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/statistics/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/badge/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/statistic-item/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/styles/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/enums/icons.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/enums/statistic.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/functions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/types/icon.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles/app.module.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -58,7 +58,7 @@
     "node.js.selected.package.standard": "",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\mykol\\AppData\\Roaming\\npm\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.sourceCode.JavaScript",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "D:\\Projects\\money-dashboard-react-redux-ts\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -105,7 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1658751094464</updated>
       <workItem from="1658751118027" duration="1230000" />
-      <workItem from="1658752705472" duration="10285000" />
+      <workItem from="1658752705472" duration="19095000" />
     </task>
     <servers />
   </component>
