@@ -55,6 +55,9 @@ module.exports = {
         p1: 20,
         p2: 16,
         p3: 14
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif']
       }
     }
   },

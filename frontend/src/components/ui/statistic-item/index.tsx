@@ -51,7 +51,7 @@ const StatisticItem: FC<StatisticItemProps> = ({
 
   return (
     <section
-      className={`lg:max-w-sm max-w-full min-h-200 h-200 px-l py-m ${gradientParams} rounded-xl`}
+      className={`lg:max-w-sm max-w-full min-h-200 h-200 px-l py-m ${gradientParams} rounded-xl font-inter`}
     >
       <div className="mb-xs">
         <IconComponent size={40} />
@@ -59,7 +59,7 @@ const StatisticItem: FC<StatisticItemProps> = ({
 
       <h3 className="text-p1 text-white">{title}</h3>
 
-      <p className="flex flex-row items-baseline mb-xs text-h1 text-white font-bold">
+      <p className="flex flex-row items-baseline mb-xs text-h1 text-white font-inter font-bold">
         <span className="flex flex-nowrap ">${integer}</span>
         <span className="text-p1">.{decimal}</span>
       </p>

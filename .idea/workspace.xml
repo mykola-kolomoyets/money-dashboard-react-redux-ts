@@ -2,9 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73c889f1-15a2-436a-b96b-73ff77b8357f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/icons/dashboard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/header/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/navbar/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/navbar/navbar-constants.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/dashboard.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/routes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/paths.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/dashboard/main/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/api/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/api/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store/api/expenses.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/api/expenses.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintrc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/icons/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/icons/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/layout/statistics/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/layout/statistics/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/statistic-item/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/statistic-item/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/enums/icons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/enums/icons.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/types/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/types/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/types/icon.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/types/icon.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -97,7 +119,7 @@
       <workItem from="1658820166481" duration="249000" />
       <workItem from="1659026463521" duration="5335000" />
       <workItem from="1659082090028" duration="100000" />
-      <workItem from="1659089275037" duration="1274000" />
+      <workItem from="1659089275037" duration="6946000" />
     </task>
     <servers />
   </component>

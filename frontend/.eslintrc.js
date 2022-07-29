@@ -10,7 +10,6 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
-    'plugin:jsx-a11y/recommended',
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime'
   ],
@@ -65,7 +64,6 @@ module.exports = {
       0,
       { forbidDefaultForRequired: 0, ignoreFunctionalComponents: 0 }
     ],
-    'jsx-a11y/label-has-associated-control': [0]
   },
   settings: {
     react: {
