@@ -9,6 +9,6 @@ export const showDeltaPercents = ({
   if (!previousValue || !currentValue) return null;
 
   const delta = currentValue - previousValue;
-  const percent = (delta / currentValue) * 100;
+  const percent = (delta / previousValue) * 100;
   return getDecimalNumber(percent);
 };

@@ -5,3 +5,21 @@
 @import "./common";
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+.apexcharts-legend-text {
+  font-size: 16px !important;
+  color: #484964 !important;
+  margin-left: 8px !important;
+}
+
+.apexcharts-legend-series {
+  margin-bottom: 8px !important;
+}
+
+.apexcharts-legend.apx-legend-position-bottom.apexcharts-align-center, .apexcharts-legend.apx-legend-position-top.apexcharts-align-center {
+  justify-content: flex-start !important;
+}
+
+.apexcharts-legend-marker {
+  flex-shrink: 0 !important;
+}

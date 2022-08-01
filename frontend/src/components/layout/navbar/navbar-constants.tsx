@@ -8,7 +8,7 @@ export const navbarItems = [
   },
   {
     title: 'Expenses',
-    Icon: Icons.dashboard,
+    Icon: Icons.expenses,
     to: '/main/expenses'
   }
 ];

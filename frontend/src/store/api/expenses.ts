@@ -13,13 +13,15 @@ import {
   GetExpensesByCategoryResponse,
   GetExpensesByCategoryRequest,
   GetTransactionsHistoryResponse,
-  AddIncomeRequest
+  AddIncomeRequest,
+  GetChartDataResponse,
+  GetChartDataRequest
 } from '../../utils/types/services/expenses';
 
 const expensesService = createApi({
-  reducerPath: 'api/expenses',
+  reducerPath: 'api/expense',
   baseQuery: fetchBaseQuery({
-    baseUrl: `${process.env.REACT_APP_API_URL}/api/expenses/`
+    baseUrl: `${process.env.REACT_APP_API_URL}/api/expense/`
   }),
   tagTypes: ['expenses', 'categories'],
   endpoints: (build) => ({
@@ -68,7 +70,8 @@ const expensesService = createApi({
       GetAllExpensesRequest
     >({
       query: (data) => ({
-        url: 'get-all-expenses',
+        url: 'all',
+        method: 'GET',
         body: data
       }),
       providesTags: ['categories']
@@ -81,9 +84,8 @@ const expensesService = createApi({
       GetExpensesByCategoryResponse,
       GetExpensesByCategoryRequest
     >({
-      query: (data) => ({
-        url: 'get-expenses-category',
-        body: data
+      query: ({ category, userId }) => ({
+        url: `by-category/${userId}/${category}`
       }),
       providesTags: ['expenses']
     }),
@@ -91,40 +93,45 @@ const expensesService = createApi({
     /**
      * Get all categories names with ids
      */
-    getExpensesItemsNames: build.query<GetExpensesNamesResponse, null>({
-      query: () => ({
-        url: 'get-names'
+    getExpensesItemsNames: build.query<GetExpensesNamesResponse, string>({
+      query: (userId) => ({
+        url: `get-names/${userId}`
       })
     }),
 
     /**
      * Get dashboard statistic data
      */
-    getExpenseStatistic: build.query<
-      GetExpenseStatisticResponse,
-      GetExpenseStatisticRequest
-    >({
-      query: (data) => ({
-        url: 'get-statistic',
-        body: data
+    getExpenseStatistic: build.query<GetExpenseStatisticResponse, string>({
+      query: (userId) => ({
+        url: `statistics/${userId}`
       })
     }),
 
     /**
      * Get percentage of top-5 expenses categories
      */
-    getActivityData: build.query<GetActivityResponse, null>({
-      query: () => ({
-        url: 'get-activity'
+    getActivityData: build.query<GetActivityResponse, string>({
+      query: (userId) => ({
+        url: `activities/${userId}`
       })
     }),
 
     /**
      * Get transactions history
      */
-    getTransactions: build.query<GetTransactionsHistoryResponse, null>({
-      query: () => ({
-        url: 'get-transactions'
+    getTransactions: build.query<GetTransactionsHistoryResponse, string>({
+      query: (userId) => ({
+        url: `last-transactions/${userId}`
+      })
+    }),
+
+    /**
+     * Get chart data
+     */
+    getChartData: build.query<GetChartDataResponse, GetChartDataRequest>({
+      query: ({ userId, filter }) => ({
+        url: `chart-data?userId=${userId}&filter=${filter}`
       })
     })
   })
@@ -138,9 +145,10 @@ export const {
   useGetActivityDataQuery,
   useGetExpensesAllCategoriesQuery,
   useGetExpensesByCategoryQuery,
-  useGetExpensesItemsNamesQuery,
+  useLazyGetExpensesItemsNamesQuery,
   useGetExpenseStatisticQuery,
-  useGetTransactionsQuery
+  useGetTransactionsQuery,
+  useGetChartDataQuery
 } = expensesService;
 
 export default expensesService;

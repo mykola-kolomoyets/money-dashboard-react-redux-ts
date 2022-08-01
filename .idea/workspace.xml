@@ -2,30 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="73c889f1-15a2-436a-b96b-73ff77b8357f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/icons/dashboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/header/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/navbar/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/navbar/navbar-constants.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/dashboard.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/routes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/utils/paths.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/views/dashboard/main/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/icons/calendar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/icons/expenses.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/icons/profile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/icons/savings.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/icons/total-expenses.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/header/header.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/navbar/navbar.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/statistics/statistics.constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/layout/tables/transactions/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/line-chart/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/line-chart/line-chart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/pie-chart/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/section/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/section/section.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/statistic-item/statistic-item.constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/table/body/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/table/cell/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/table/header/transactions/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/ui/table/row/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/constants.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/enums/table.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/utils/types/table.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/dashboard/main/main.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/icons/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/icons/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/layout/header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/layout/header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/layout/navbar/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/layout/navbar/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/layout/navbar/navbar-constants.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/layout/navbar/navbar-constants.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/layout/statistics/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/layout/statistics/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/badge/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/badge/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/ui/statistic-item/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ui/statistic-item/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/dashboard/dashboard.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/dashboard/dashboard.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/api/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/api/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store/api/expenses.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store/api/expenses.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styles/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles/common.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/utils/enums/icons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/enums/icons.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/utils/types/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/types/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/utils/types/icon.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/types/icon.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/functions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/functions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/utils/types/services/expenses.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/utils/types/services/expenses.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/dashboard/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/dashboard/main/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,24 +72,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Projects/money-dashboard-backend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\mykol\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\Projects\\money-dashboard-react-redux-ts\\frontend\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Projects/money-dashboard-react-redux-ts",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\mykol\\AppData\\Roaming\\npm\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "D:\\Projects\\money-dashboard-react-redux-ts\\frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\money-dashboard-react-redux-ts\frontend\src\components\icons" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\money-dashboard-react-redux-ts\frontend\src" />
     </key>
@@ -119,7 +139,9 @@
       <workItem from="1658820166481" duration="249000" />
       <workItem from="1659026463521" duration="5335000" />
       <workItem from="1659082090028" duration="100000" />
-      <workItem from="1659089275037" duration="6946000" />
+      <workItem from="1659089275037" duration="30012000" />
+      <workItem from="1659257018718" duration="5208000" />
+      <workItem from="1659266311078" duration="3787000" />
     </task>
     <servers />
   </component>

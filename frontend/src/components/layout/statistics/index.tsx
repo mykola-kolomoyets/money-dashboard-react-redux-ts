@@ -1,49 +1,49 @@
-import React, { FC } from 'react';
-import { Icons } from '../../../utils/enums/icons';
+import React, { FC, useMemo } from 'react';
+
+import { useGetExpenseStatisticQuery } from '../../../store/api/expenses';
+
 import StatisticItem from '../../ui/statistic-item';
-import { StatisticItemColors } from '../../../utils/enums/statistic';
 
-const titles = [
-  'This week expenses',
-  'Total expenses',
-  'Total income',
-  'Total savings'
-];
-
-const captions = [
-  'than last week',
-  'than last month',
-  'than last month',
-  'than last month'
-];
-
-const icons: Icons[] = [
-  Icons.week_expenses,
-  Icons.week_expenses,
-  Icons.week_expenses,
-  Icons.week_expenses
-];
-
-const colors: StatisticItemColors[] = [
-  StatisticItemColors.lightBlue,
-  StatisticItemColors.blue,
-  StatisticItemColors.pink,
-  StatisticItemColors.purple
-];
+import {
+  captions,
+  icons,
+  initialStatisticData,
+  titles,
+  colors
+} from './statistics.constants';
 
 const Statistics: FC = () => {
+  const {
+    data: statistics,
+    isError: isStatisticsError,
+    isFetching: isStatisticsFetching,
+    error: statisticsFetchError
+  } = useGetExpenseStatisticQuery('62e3b5aa2be430d42d6b23be', {
+    refetchOnFocus: true,
+    refetchOnReconnect: true
+  });
+
+  const statisticsData = useMemo(
+    () => ({
+      ...initialStatisticData,
+      ...statistics
+    }),
+    [statistics]
+  );
+
+  if (isStatisticsFetching) return <section>Loading...</section>;
+
+  if (isStatisticsError && statisticsFetchError) return null;
+
   return (
-    <section className="mx-auto p-3 grid grid-cols-1 xl:grid-cols-4 gap-xl lg:grid-cols-2">
+    <section className=" w-full mx-auto grid gap-xl grid-cols-statistic">
       {titles.map((title, index) => (
         <StatisticItem
           key={title}
           icon={icons[index]}
           title={title}
           color={colors[index]}
-          values={{
-            currentValue: 2001.54,
-            previousValue: 1800
-          }}
+          values={Object.values(statisticsData)[index]}
           badgeTitle={captions[index]}
         />
       ))}

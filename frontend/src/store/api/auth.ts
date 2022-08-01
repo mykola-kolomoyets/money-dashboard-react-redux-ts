@@ -35,6 +35,6 @@ const authService = createApi({
   })
 });
 
-export const { useLoginQuery, useSignUpQuery } = authService;
+export const { useLazyLoginQuery, useLazySignUpQuery } = authService;
 
 export default authService;

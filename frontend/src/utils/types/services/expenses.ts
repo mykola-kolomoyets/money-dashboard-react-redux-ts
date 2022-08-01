@@ -35,17 +35,16 @@ export type GetAllExpensesResponse = {
 }[];
 
 export type GetExpensesByCategoryRequest = {
+  userId: string;
   category: string;
 };
 
 export type GetExpensesByCategoryResponse = Expense[];
 
-export type GetExpensesNamesResponse = {
-  id: string;
-  name: string;
-}[];
+export type GetExpensesNamesResponse = string[];
 
 export type GetExpenseStatisticRequest = {
+  userId: string;
   period: Period;
 };
 
@@ -56,9 +55,16 @@ export type GetExpenseStatisticResponse = {
   totalSavings: PeriodValue<number>;
 };
 
-export type GetActivityResponse = {
-  category: string;
-  amount: number;
-}[];
+export type GetActivityResponse = { [key: string]: number };
 
 export type GetTransactionsHistoryResponse = Expense[];
+
+export type GetChartDataRequest = {
+  userId: string;
+  filter: 'six-months' | 'from-year';
+};
+
+export type GetChartDataResponse = {
+  expenses: { [key: string]: number };
+  incomes: { [key: string]: number };
+};
